@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Using linear layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/newlayout"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+<!--Button for Drak mode -->
+    <Button
+        android:id="@+id/btnDarkMode"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:backgroundTint="@android:color/background_dark"
+        android:padding="10dp"
+        android:text="Dark Mode" />
+<!--Button for light mode-->
+    <Button
+        android:id="@+id/btnReadMode"
+        style="@android:style/Animation.Translucent"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:padding="10dp"
+        android:text="Read Mode" />
+<!--Creating the Text field-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="You can change the theme of the page by clicking above buttons" />
+</LinearLayout>
